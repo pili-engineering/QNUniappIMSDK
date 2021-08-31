@@ -1,0 +1,9 @@
+/**
+ * 绝对定位上下左右居中
+ */
+@mixin fixedCenterCenter {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
