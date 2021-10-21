@@ -2,7 +2,11 @@
 
 七牛 IM uniapp 版
 
-SDK 文档同 Web 端：https://github.com/pili-engineering/QNWebIMSDK/blob/main/README.md
+SDK 文档同 Web 端：https://developer.qiniu.com/IM/8325/im-web-document
+
+DEMO 地址：https://github.com/pili-engineering/QNUniappIMSDK
+
+SDK 文件下载地址：[qnuniapp-im.js](https://raw.githubusercontent.com/pili-engineering/QNUniappIMSDK/main/im/qnuniapp-im.js)
 
 ## 如何运行
 

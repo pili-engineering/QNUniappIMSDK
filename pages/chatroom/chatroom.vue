@@ -5,18 +5,14 @@
 			<view class="chat-message" :id="`message-${index}`" :key="index" v-for="(item, index) in messages">
 				<view class="username">
 					用户_{{
-						item.content && 
-						item.content.content && 
-						item.content.content && 
-						item.content.content.msgStr ? item.content.content.msgStr.senderId : ''
+						item.content &&
+						item.content.msgStr ? item.content.msgStr.senderId : ''
 					}}:
 				</view>
 				<view class="text">
 					{{
-						item.content && 
-						item.content.content && 
-						item.content.content && 
-						item.content.content.msgStr ? item.content.content.msgStr.msgContent : ''
+						item.content &&
+						item.content.msgStr ? item.content.msgStr.msgContent : ''
 					}}
 				</view>
 			</view>
@@ -53,15 +49,13 @@
 				const cuid = im.userManage.getUid() + '';
 				const message = {
 					content: JSON.stringify({
-						content: {
-							action: 'pubChatText',
-							msgStr: {
-								senderId: cuid,
-								senderName: '',
-								msgContent: this.inputValue
-							}
-						}
-					}),
+            action: 'pubChatText',
+            msgStr: {
+              senderId: cuid,
+              senderName: '',
+              msgContent: this.inputValue
+            }
+          }),
 					gid: this.imGroupId
 				};
 				im.sysManage.sendGroupMessage(message);

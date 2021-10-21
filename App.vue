@@ -21,7 +21,7 @@
 			 */
 			initSDK() {
 				const im = QNIM.init({
-					appid: 'dxdjbunzmxiu'
+					appid: 'cigzypnhoyno'
 				});
 				if (im) {
 					this.globalData.im = im;
