@@ -1,5 +1,5 @@
 <script>
-	import * as QNIM from 'im/qnuniapp-im.js';
+	import * as QNIM from 'im/qnuniapp-im.umd.js';
 
 	export default {
 		globalData: {
@@ -54,7 +54,7 @@
 
 			/**
 			 * 登录失败提示
-			 * @param {*} error 
+			 * @param {*} error
 			 */
 			loginFail(error) {
 				console.log('登录失败');
