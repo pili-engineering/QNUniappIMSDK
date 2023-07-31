@@ -1,5 +1,5 @@
 <script>
-	import * as QNIM from 'im/qnuniapp-im.umd.js';
+	import * as QNIM from './im/qnuniapp-im.umd.js';
 
 	export default {
 		globalData: {
